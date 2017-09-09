@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width:500px;
+    margin:20px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+input, label, select {
+    display: block;
+}
+input, select {
+    margin-bottom: 10px;
+}
+input, textarea, select {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px
+}
+.control-panel {
+    text-align: center;
+}
+.error {
+    color: red;
+}
+.noError {
+    color: black;
+}
+.invalid {
+    background: lightblue;
+    border: solid red 1px;
+
+}
+/*#message {
+    color: red;
+}
+*/

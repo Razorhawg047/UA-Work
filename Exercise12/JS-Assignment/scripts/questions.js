@@ -14,7 +14,7 @@ var y = str.indexOf('W');
 var str = "Hello World";
 var z = str.indexOf('h');
 //Answer:
-//z = 0
+//z = -1
 ///
 
 
