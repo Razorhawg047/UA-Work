@@ -1,6 +1,5 @@
-var errorlist = [];
-
 document.getElementById('submit').addEventListener('click', function(){
+    var errorlist = [];
     var name = document.getElementById('username').value;
     var nameInput = document.getElementById('username');
     var password= document.getElementById('password').value;
@@ -15,27 +14,30 @@ document.getElementById('submit').addEventListener('click', function(){
     if(name.length===0){
         errorlist.push('User Name is required');
         nameInput.classList.add('invalid');
+    }
     if(email.length===0|| emailValid===-1){
         errorlist.push('Email is required');
         emailText.classList.add('invalid');
+    }
     if(password.length===0){
         errorlist.push('Password is required');
         pwdInput.classList.add('invalid');
+    }
     if(timezone.length===0){
         errorlist.push('Time Zone is required');
         timeZoneInput.classList.add('invalid');
+    }
     if(terms!==true){
         errorlist.push('Acceptance of the terms is required');
         termsInput.classList.add('invalid');
-    }}}}}else{
+    }if (errorlist.length>0){
+        var message = document.getElementById('message');
+        message.classList.add('error');
+    }else{
     document.getElementById('message').innerHTML = 'Form Successfully Submitted';
 }
 for (i = 0; i < errorlist.length; i++){
 document.getElementById('message').innerHTML += errorlist[i] + ', '; 
-}
-if (errorlist.length>0){
-    var message = document.getElementById('message');
-    message.classList.add('error');
 }
 })
 document.getElementById('reset').addEventListener('click', function(){
@@ -44,4 +46,5 @@ document.getElementById('reset').addEventListener('click', function(){
     document.getElementById('password').value = '';
     document.getElementById('timezone').value = '';
     document.getElementById('terms').checked = false;
+    document.getElementById('message').innerHTML = '';
 })

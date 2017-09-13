@@ -102,6 +102,10 @@ aside section{
     width: 30%;
     float: left;
 }
+.events a, .social a{
+     margin-bottom: 8px;
+     padding-bottom: 10px;
+}
 .social {
     display: block;
     float: left;
