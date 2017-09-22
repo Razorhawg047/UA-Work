@@ -4,22 +4,22 @@ var dateFormatter = {
     getShortTime: function(date){
         var hour = date.getHours();
         var minute = date.getMinutes();
-        minute = (minute === 0)? minute = '00': minute;
+        minute = (minute < 10)? minute = '0' + minute : minute;
         if (hour >= 12){
-            var suffix = 'PM'
+            var suffix = 'PM';
         }else {
-            suffix = 'AM'
+            suffix = 'AM';
         }
         return hour + ':' + minute + ' ' + suffix;
     },
     getLongTime: function(date){
         var hour = date.getHours();
         var minute = date.getMinutes();
-        minute = (minute === 0)? minute = '00': minute;
+        minute = (minute < 10)? minute = '0' + minute : minute;
         if (hour >= 12){
-            var suffix = 'PM'
+            var suffix = 'PM';
         }else {
-            suffix = 'AM'
+            suffix = 'AM';
         }
         var milli = date.getMilliseconds();
         return hour + ':' + minute + ':' + milli + ' ' + suffix;
@@ -43,11 +43,11 @@ var dateFormatter = {
         var year = date.getFullYear();
         var hour = date.getHours();
         var minute = date.getMinutes();
-        minute = (minute === 0)? minute = '00': minute;
+        minute = (minute < 10)? minute = '0' + minute : minute;
         if (hour >= 12){
-            var suffix = 'PM'
+            var suffix = 'PM';
         }else {
-            suffix = 'AM'
+            suffix = 'AM';
         }
         return month + '/' + day + '/' + year + ' ' + hour + ':' + minute + ' ' + suffix;
     },
@@ -58,7 +58,7 @@ var dateFormatter = {
         var year = date.getFullYear();
         var hour = date.getHours();
         var minute = date.getMinutes();
-        minute = (minute === 0)? minute = '00': minute;
+        minute = (minute < 10)? minute = '0' + minute : minute;
         if (hour >= 12){
             var suffix = 'PM'
         }else {
@@ -75,7 +75,7 @@ var dateFormatter = {
         var year = date.getFullYear();
         var hour = date.getHours();
         var minute = date.getMinutes();
-        minute = (minute === 0)? minute = '00': minute;
+        minute = (minute < 10)? minute = '0' + minute : minute;
         if (hour >= 12){
             var suffix = 'PM'
         }else {
