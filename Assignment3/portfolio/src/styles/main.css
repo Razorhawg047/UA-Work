@@ -16,7 +16,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #AC7F00;
-    min-height: 360px;
+    height: 400px;
     margin-bottom: 0;
 }
 header h1{
@@ -37,13 +37,12 @@ header a{
     width: 70%;
     background: white;
     padding-right: 20px;
-    padding-top: 80px;
     text-align: center;
 }
 section {
     background: white;
     margin: 0;
-    min-width: 960px;
+    min-width: 800px;
     height: 400px;
 
 }
@@ -76,4 +75,17 @@ footer {
 aside li {
     list-style: none;
     margin-bottom: 0;
+}
+li a{
+    text-decoration: none;
+    color: #d0bfa9;
+}
+footer {
+    margin: 0;
+    text-align: center;
+}
+footer p {
+    font-size: 10px;
+    margin: 0;
+    padding-top: 20px;
 }
