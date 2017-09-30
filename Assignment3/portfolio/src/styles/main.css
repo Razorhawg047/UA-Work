@@ -79,6 +79,7 @@ aside li {
 li a{
     text-decoration: none;
     color: #d0bfa9;
+    font-weight: bold;
 }
 footer {
     margin: 0;

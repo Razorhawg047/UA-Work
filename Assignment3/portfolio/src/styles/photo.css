@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, gray, black);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    margin: 0 auto;
+    background: lightgray;
+    width: 960px;
+    min-height: 1020px;
+}
+.showImg {
+    text-align: center;
+}
+#showImg{
+    border-radius: 12px;
+    background: black;
+    color: white;
+}
+header {
+    background: url('../pictures/soccer.jpg');
+    background-repeat: no repeat;
+    background-size: 100% 100%;
+    height: 480px;
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+h5 {
+    text-align: center;
+}
+.photos {
+    display: none;
+    text-align: center;
+}
+.imgSize {
+    height: 250px;
+    width: 250px;
+}
+.rotate {
+    transform: rotate(90deg);
+    height: 250px;
+    width: 250px;
+}
+.stretch {
+    height: 250px;
+    width: 600px;
+}
