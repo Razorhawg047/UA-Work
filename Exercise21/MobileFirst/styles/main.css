@@ -124,10 +124,10 @@ footer>nav>a {
         width: 66.6%;
     }
     .article-list {
-        width: 100%;
+        width: 66%;
+        float: left;
     }
     article{
-        width: 66%;
         overflow: hidden;
         display: block;
         padding-right: 10px;
