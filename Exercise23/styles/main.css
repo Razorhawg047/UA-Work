@@ -4,3 +4,8 @@
 .row div {
     border: 1px solid black;
 }
+.end {
+    display: flex;
+    align-items: flex-end;
+    float: right;
+}
